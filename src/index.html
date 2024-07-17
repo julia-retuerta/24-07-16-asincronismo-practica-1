@@ -6,14 +6,29 @@
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+
     <title>Asincronismo práctica 1</title>
   </head>
 
   <body>
-    <main>
+    <main class="main">
       <div class="card">
-        <span>ADVICE #117</span>
-        <p>“It is easy to sit up and take notice, what's difficult is getting up and taking action.”</p>
+        <span id="id-number" class="card__number"></span>
+
+        <p id="advice" class="card__advice"></p>
+
+        <picture>
+          <source media="(min-width: 768px)" srcset="./assets/images/pattern-divider-desktop.svg" />
+          <source media="(min-width: 360px)" srcset="./assets/images/pattern-divider-mobile.svg" />
+          <img src="./assets/images/pattern-divider-mobile.svg" alt="divider image" />
+        </picture>
+
+        <div id="button" class="button-bg">
+          <img src="./assets/images/icon-dice.svg" alt="icon dice" />
+        </div>
       </div>
     </main>
     <script type="module" src="./js/index.js"></script>
