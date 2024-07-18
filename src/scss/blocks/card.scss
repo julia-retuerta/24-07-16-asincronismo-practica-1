@@ -42,6 +42,10 @@
       content: open-quote;
     }
 
+    &::after {
+      content: close-quote;
+    }
+
     @include responsive(desktop) {
       font-size: 28px;
       letter-spacing: -0.3px;
